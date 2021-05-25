@@ -1,0 +1,12 @@
+h1{
+  font-weight: normal
+}
+.propImage{
+  height: 250px;
+  width: 200px;
+}
+.propertycard{
+  width: 250px;
+  border: 2px;
+  border-color: black;
+}
