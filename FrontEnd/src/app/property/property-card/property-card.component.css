@@ -1,12 +1,49 @@
 h1{
   font-weight: normal
 }
-.propImage{
-  height: 250px;
-  width: 200px;
-}
 .propertycard{
   width: 250px;
   border: 2px;
   border-color: black;
+}
+
+.img-wrapper{
+  overflow: hidden;
+  position: relative;
+}
+
+.card:hover img{
+  transform: scale(1.2,1.2);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+  height: 200px;
+  width: 200px;
+  opacity: 0.5;
+}
+
+.card img{
+  transform: scale(1,1);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+  height: 200px;
+  width: 200px;
+}
+
+.member-icons{
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+}
+
+.img-wrapper:hover .member-icons{
+  bottom: 0;
+  opacity: 1;
+}
+
+.animate{
+  transition: all 0.4s ease-in-out;
 }
